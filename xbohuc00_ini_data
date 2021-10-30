@@ -1,0 +1,372 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 14.0
+-- Dumped by pg_dump version 14.0
+
+-- Started on 2021-10-29 09:52:55
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3386 (class 0 OID 16409)
+-- Dependencies: 212
+-- Data for Name: blocked_shops; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.blocked_shops (shop_id, reason, created_at, updated_at) VALUES (1, 'Shady', '2021-10-27', '2021-10-27');
+INSERT INTO public.blocked_shops (shop_id, reason, created_at, updated_at) VALUES (6, 'Nedorucovanie', '2021-10-27', '2021-10-27');
+INSERT INTO public.blocked_shops (shop_id, reason, created_at, updated_at) VALUES (7, 'Scams', '2021-10-27', '2021-10-27');
+INSERT INTO public.blocked_shops (shop_id, reason, created_at, updated_at) VALUES (8, 'Deleted', '2021-10-27', '2021-10-27');
+INSERT INTO public.blocked_shops (shop_id, reason, created_at, updated_at) VALUES (9, 'Overpriced', '2021-10-27', '2021-10-27');
+
+
+--
+-- TOC entry 3391 (class 0 OID 16441)
+-- Dependencies: 217
+-- Data for Name: category; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.category (category_id, category_name, created_at, updated_at) VALUES (1, 'Kuchyna', '2021-10-27', '2021-10-27');
+INSERT INTO public.category (category_id, category_name, created_at, updated_at) VALUES (2, 'PC', '2021-10-27', '2021-10-27');
+INSERT INTO public.category (category_id, category_name, created_at, updated_at) VALUES (3, 'Kupelna', '2021-10-27', '2021-10-27');
+INSERT INTO public.category (category_id, category_name, created_at, updated_at) VALUES (4, 'Mobile', '2021-10-27', '2021-10-27');
+INSERT INTO public.category (category_id, category_name, created_at, updated_at) VALUES (5, 'Laptop', '2021-10-27', '2021-10-27');
+
+
+--
+-- TOC entry 3390 (class 0 OID 16434)
+-- Dependencies: 216
+-- Data for Name: comments; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (1, 'yttjpcjcqdwfuytlskvb', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (2, 'bfalgnzxhivwldztkqgb', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (3, 'rybtjgglwmnuigquqzle', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (4, 'ltsmizamwjtqeppcewke', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (5, 'tzcstupthjubyeukgitg', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (6, 'mnfshpubjawabniarlmx', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (7, 'okbsmoieqspkrwbqsgdp', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (8, 'ncmjmasyuembjgbohebf', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (9, 'ginacfnqmmvhhfqjhevp', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (10, 'owzjfjcvwzaswvebgfix', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (11, 'fekxpdnvltuccgxduosn', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (12, 'gomcuizeqrqluksidypr', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (13, 'oqhghmmwbrlxoebmmryn', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (14, 'ownjwmntxyrzdcatyrsy', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (15, 'jofapbxqlmegcasfniso', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (16, 'nrbfabfsapbfyvvfblpi', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (17, 'ikqznqazmrkzgpzwnkci', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (18, 'apfyavybcutamclzqfsr', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (19, 'axdhtjcqxevsdddtumhq', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (20, 'kmjgerbfxjtesvffjaby', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (21, 'bvrpawongxhpmrrkfkqw', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (22, 'vayopshechvlupvvjiox', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (23, 'jylbeirfkcexevfkvzto', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (24, 'xmttlnkpuwompmgtuaba', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (25, 'ggebpyauyqxmcbetvqju', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (26, 'chiwbjjxmfrmidllqksn', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (27, 'ougmskryrrhltiaumdxn', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (28, 'egjibevzeqynvpioqwmg', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (29, 'jfjzbwnbvnmnqrwtabmk', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (30, 'wyboaptcexeixccsdhwg', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (31, 'pcgvkxribjjihtfarzcm', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (32, 'lklpdvnojbfrqsxhiiqb', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (33, 'mhwdpxptjuoefxjoepfv', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (34, 'drivqkozohhazxbnvgjl', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (35, 'cvuehlisgcygqpdzusjl', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (36, 'hzmwrqbhntzhijfxxbte', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (37, 'sxfoufkeazcyfukdkjnl', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (38, 'kbzpyaryfycjfzzywbhi', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (39, 'eiultuylpijhthawmmhi', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (40, 'dljcnqyypcaatvlsootq', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (41, 'mkhqogjbbswojhigzmbn', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (42, 'ikwbqykiaumklmddnrnt', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (43, 'mpkfamcccsswesomfyuy', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (44, 'sxsjxfvbbudpeupzqiij', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (45, 'zoppyiiqsgpicyxfrvwh', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (46, 'ywlvegwylxrgrmipyeyk', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (47, 'yfyshfhwcjkssggsfxvb', 1, 1);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (48, 'ebxgwysujxmxisixvgsx', 4, 4);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (49, 'tvyvwjullvdllcbmbyyh', 2, 2);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (50, 'yyrtwzeiugyfadqlibmh', 3, 3);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (51, 'nvrddxepstirejgxugvb', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (52, 'ehqhldsuxtgvhldxlgzg', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (53, 'rhorbxhhqxgfnyuovnvi', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (54, 'iwnufegxconeztykchut', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (55, 'xkepzcveaoiunjibilsu', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (56, 'bqoaekrgxjixqsbqgnxj', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (57, 'pouszqarescmoebuexny', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (58, 'ykkvmxnnzgtywyjhdsku', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (59, 'gxvvykjultmhgwgkneng', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (60, 'ifhwjkrdqktyrhaktbbx', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (61, 'ktwofmyxpkdaqlfrskwi', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (62, 'xlqwfaihrhzamopkdiyx', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (63, 'zmgrpfhzsqzqaokpimgc', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (64, 'zrobvqlilzfnaxpapcij', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (65, 'acykqsfkcwqfxqqhpicv', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (66, 'nuvwyyfzjsaufavawncz', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (67, 'jlhyhqqujehtbkcruaor', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (68, 'pnnjslmuskzhcriewxpm', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (69, 'marwyngcbeqrexzoakqu', 5, 5);
+INSERT INTO public.comments (comment_id, comment_body, user_id, product_id) VALUES (70, 'jwaqggunuciirzbhhhdk', 5, 5);
+
+
+--
+-- TOC entry 3389 (class 0 OID 16429)
+-- Dependencies: 215
+-- Data for Name: currency; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.currency (currency_id, currency_name, currency_code, product_id) VALUES (1, 'Euro', 'EUR', 1);
+INSERT INTO public.currency (currency_id, currency_name, currency_code, product_id) VALUES (2, 'US Dollar', 'USD', 2);
+INSERT INTO public.currency (currency_id, currency_name, currency_code, product_id) VALUES (3, 'Ceska Koruna', 'CZK', 3);
+INSERT INTO public.currency (currency_id, currency_name, currency_code, product_id) VALUES (4, 'Libra', 'LB', 4);
+INSERT INTO public.currency (currency_id, currency_name, currency_code, product_id) VALUES (5, 'Bitcoin', 'BTC', 5);
+
+
+--
+-- TOC entry 3395 (class 0 OID 16463)
+-- Dependencies: 221
+-- Data for Name: permission_role; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.permission_role (permission_id, role_id) VALUES (1, 1);
+INSERT INTO public.permission_role (permission_id, role_id) VALUES (2, 2);
+INSERT INTO public.permission_role (permission_id, role_id) VALUES (3, 3);
+INSERT INTO public.permission_role (permission_id, role_id) VALUES (4, 4);
+INSERT INTO public.permission_role (permission_id, role_id) VALUES (5, 5);
+
+
+--
+-- TOC entry 3396 (class 0 OID 16468)
+-- Dependencies: 222
+-- Data for Name: permissions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.permissions (permissions_id, permissions_name, permissions_label) VALUES (1, 'Add', 'Pridat shop');
+INSERT INTO public.permissions (permissions_id, permissions_name, permissions_label) VALUES (2, 'Comment', 'Comentovat');
+INSERT INTO public.permissions (permissions_id, permissions_name, permissions_label) VALUES (3, 'Edit', 'Editovat');
+INSERT INTO public.permissions (permissions_id, permissions_name, permissions_label) VALUES (4, 'Delete', 'Zmazat');
+INSERT INTO public.permissions (permissions_id, permissions_name, permissions_label) VALUES (5, 'Show', 'Ukazat');
+
+
+--
+-- TOC entry 3387 (class 0 OID 16419)
+-- Dependencies: 213
+-- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.product (product_id, product_name, product_detail, has_price, price, shop_id, category_id, currency_id) VALUES (1, 'HP OMEN', 'NTB', 1, 22, 1, 1, 1);
+INSERT INTO public.product (product_id, product_name, product_detail, has_price, price, shop_id, category_id, currency_id) VALUES (2, 'Kartacek', 'Na zuby', 1, 44, 2, 2, 2);
+INSERT INTO public.product (product_id, product_name, product_detail, has_price, price, shop_id, category_id, currency_id) VALUES (3, 'Anime', 'Ajaja', 1, 55, 3, 3, 3);
+INSERT INTO public.product (product_id, product_name, product_detail, has_price, price, shop_id, category_id, currency_id) VALUES (4, 'Katana', 'Japonsk', 0, 0, 4, 4, 4);
+INSERT INTO public.product (product_id, product_name, product_detail, has_price, price, shop_id, category_id, currency_id) VALUES (5, 'Neviem', 'Zidan', 1, 222, 5, 5, 5);
+
+
+--
+-- TOC entry 3392 (class 0 OID 16446)
+-- Dependencies: 218
+-- Data for Name: product_discounts; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.product_discounts (discount_id, product_id, is_percentage, discount_value, start_date, end_date) VALUES (1, 1, 1, 1, '2021-10-27', '2021-10-27');
+INSERT INTO public.product_discounts (discount_id, product_id, is_percentage, discount_value, start_date, end_date) VALUES (2, 2, 2, 2, '2021-10-27', '2021-10-27');
+INSERT INTO public.product_discounts (discount_id, product_id, is_percentage, discount_value, start_date, end_date) VALUES (3, 3, 3, 3, '2021-10-27', '2021-10-27');
+INSERT INTO public.product_discounts (discount_id, product_id, is_percentage, discount_value, start_date, end_date) VALUES (4, 4, 4, 4, '2021-10-27', '2021-10-27');
+INSERT INTO public.product_discounts (discount_id, product_id, is_percentage, discount_value, start_date, end_date) VALUES (5, 5, 5, 5, '2021-10-27', '2021-10-27');
+
+
+--
+-- TOC entry 3388 (class 0 OID 16424)
+-- Dependencies: 214
+-- Data for Name: product_photos; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.product_photos (photo_id, product_id, product_photo) VALUES (1, 1, '11111');
+INSERT INTO public.product_photos (photo_id, product_id, product_photo) VALUES (2, 2, '2222');
+INSERT INTO public.product_photos (photo_id, product_id, product_photo) VALUES (3, 3, '33333');
+INSERT INTO public.product_photos (photo_id, product_id, product_photo) VALUES (4, 4, '4444');
+INSERT INTO public.product_photos (photo_id, product_id, product_photo) VALUES (5, 5, '55555');
+
+
+--
+-- TOC entry 3393 (class 0 OID 16451)
+-- Dependencies: 219
+-- Data for Name: role_user; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.role_user (role_id, user_id) VALUES (1, 1);
+INSERT INTO public.role_user (role_id, user_id) VALUES (2, 2);
+INSERT INTO public.role_user (role_id, user_id) VALUES (3, 3);
+INSERT INTO public.role_user (role_id, user_id) VALUES (4, 4);
+INSERT INTO public.role_user (role_id, user_id) VALUES (5, 5);
+
+
+--
+-- TOC entry 3394 (class 0 OID 16456)
+-- Dependencies: 220
+-- Data for Name: roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.roles (roles_id, roles_name, roles_label) VALUES (1, 'Admin', 'hello');
+INSERT INTO public.roles (roles_id, roles_name, roles_label) VALUES (2, 'User', 'it');
+INSERT INTO public.roles (roles_id, roles_name, roles_label) VALUES (3, 'SuperUser', 'is');
+INSERT INTO public.roles (roles_id, roles_name, roles_label) VALUES (4, 'Shop', 'me');
+INSERT INTO public.roles (roles_id, roles_name, roles_label) VALUES (5, 'ShopAdmin', '..');
+
+
+--
+-- TOC entry 3385 (class 0 OID 16404)
+-- Dependencies: 211
+-- Data for Name: shop; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.shop (shop_id, shop_name, shop_web, shop_logo, user_id) VALUES (1, 'alza', 'alza.cz', 'dunno', 1);
+INSERT INTO public.shop (shop_id, shop_name, shop_web, shop_logo, user_id) VALUES (2, 'mall', 'mall.cz', 'nope', 2);
+INSERT INTO public.shop (shop_id, shop_name, shop_web, shop_logo, user_id) VALUES (3, 'datart', 'datart.cz', 'neviem', 3);
+INSERT INTO public.shop (shop_id, shop_name, shop_web, shop_logo, user_id) VALUES (4, 'okay', 'okay.sk', 'nevjem us', 4);
+INSERT INTO public.shop (shop_id, shop_name, shop_web, shop_logo, user_id) VALUES (5, 'naj', 'naj.sk', 'logo', 5);
+
+
+--
+-- TOC entry 3384 (class 0 OID 16396)
+-- Dependencies: 210
+-- Data for Name: user; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (1, 'xbohuc00', 'xbohuc00@vut.cz', 'Bohucky', 'heslo');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (2, 'xgasparova01', 'xgasparova01@vut.cz', 'Gasparova', '1111');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (3, 'jancik', 'jancik@vut.cz', 'David', 'Password');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (4, 'duisenbekova', 'karina@vut.cz', 'Karin', 'Ajaja');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (5, 'Simca', 'simonka@vut.cz', 'Simona', '123456');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (6, 'fanbybgthcuwdzs', 'tgvglhzprrqbydp@mail.cz', 'mismloitmpitlwb', 'blselpdpjtimfmr');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (7, 'iwfvgouvvxernpz', 'kzkptigaqtcwrrn@mail.cz', 'odqailfejhfxpjm', 'xtfcpyinyjxrjan');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (8, 'vpceocvcjalhbzh', 'ntsmswfsawgvieh@mail.cz', 'yyhijjrooquzebh', 'gwahktdzlfimtcr');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (9, 'eqktbuzbhgwazxa', 'liwbqpjjklclykd@mail.cz', 'uqxpdcuprnbmgbl', 'jqaxgudhaczliqq');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (10, 'bamreutauptzbjf', 'wcvsgnxrqnnskdt@mail.cz', 'seiyrugalflaaap', 'xdicvfsiqbwpixm');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (11, 'uhjvoveqhhvlueu', 'ozlktasjfasrkkp@mail.cz', 'ippqxtoozpwcazg', 'mdjkpbfsjgxjrln');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (12, 'khooqutwclbfxwx', 'ngzpimhruaorrmn@mail.cz', 'elcbdcpcskdfruw', 'mipskzuapoqgxxb');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (13, 'mtgcmvbuomvonmo', 'izexiwvstallysm@mail.cz', 'ajlycquwjxjpecw', 'zflkxfiwtwkqrsm');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (14, 'ouqcsyftnyrtzgj', 'ptrpgxmidsclsbo@mail.cz', 'cgcmjbqalbajjbk', 'pqrfwzfucnbthfg');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (15, 'szjrqveaqvqmywn', 'fmmplqgaikyowue@mail.cz', 'fxvhbmpdcqpcdfw', 'xwsbssaucwnbyvf');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (16, 'vxpwsgjoaooefzq', 'mktwfkmxtpigkah@mail.cz', 'ywijbhpnivvvhwf', 'vbcgmvvajntohvl');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (17, 'duvsvjmocyntqns', 'slnxfqzotxinidg@mail.cz', 'bsasllcvhxalcij', 'pjeeqktzfslxqpn');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (18, 'cdwmdajxgnpepax', 'dztvvfysdmzdlzl@mail.cz', 'ushhcnzpqthxmvk', 'yyvefenpgefpxno');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (19, 'vpwvozvcufnvaop', 'ripjpqfblabuzas@mail.cz', 'yuxrxvvsvibiugt', 'zoriaytbkpmqphi');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (20, 'wotkvtrqyqcixxl', 'usqrqgiqiinkwvs@mail.cz', 'xmnobuqofzsqfso', 'lbrvfmcjpbszmia');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (21, 'fqziifhegyalnan', 'haqduzlvzqoxjvi@mail.cz', 'ypcvkcvvmdkkwyl', 'nafoukcfofaeznf');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (22, 'sfgoovdufbcuknx', 'nhgwzriqmqxpygd@mail.cz', 'brjxwwoyvhvkzgx', 'lchnqvkmlgpabxb');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (23, 'uhqanqonpqfyhuz', 'fdyzrhakpwfncjh@mail.cz', 'vmnwlpophdndshx', 'lhohhgtlrisezfl');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (24, 'tjjsccfrbzbklbp', 'jqiorkndrsrxjlo@mail.cz', 'kkinlswiuazvweq', 'fmjhiuxrqgglwcm');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (25, 'znaocxegrzzkaos', 'xldnpaqogaoayam@mail.cz', 'kqvokzsvnwpvopm', 'lxlwhxfcxbjsnlv');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (26, 'ivavfetcgquxfiu', 'hhwqpeeaddyphwm@mail.cz', 'zvchfraovhljvby', 'eprxmkuvatxplie');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (27, 'xrndtmszgzsnhsm', 'zcbdxrjnnsyirzu@mail.cz', 'qflbknjnexrusih', 'hjnzlbvheltelfj');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (28, 'tfpiceydenunpgl', 'lxjursnlrqmfjfk@mail.cz', 'oluhbvyfvrllyhv', 'pxlfgaorwdpbbpu');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (29, 'mpkoozzdocrqriu', 'jxibejhcjrsmnvj@mail.cz', 'houyhamhmrzypnc', 'laixmwxsdrjsvqg');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (30, 'jkmepekawrzdhji', 'jlpyxiqesbmdoqx@mail.cz', 'qyhffspcecwatbc', 'zneyhwncjwyqldm');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (31, 'utwdsrsffuxiuqk', 'phmpzmmogkgbdst@mail.cz', 'gmdstemnafkfwmy', 'tokosapkgqxevil');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (32, 'kxuqchwdrkfuaoh', 'qdoxjljdnfftoka@mail.cz', 'oaepgwqafohbpws', 'gwfiyksaokxqshz');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (33, 'dyvovtlzjonlxvd', 'bjxdwxqxrnzzccg@mail.cz', 'rgyothyzhlgurcc', 'dhdllshzkkzrbtt');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (34, 'ldtxqqekmacbrve', 'xjvmywimrbtlljn@mail.cz', 'kkaqqjtmqwaikub', 'ligrdncwpecufip');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (35, 'mqhmqouzhvhrwpc', 'idmqpvdjypwbtrg@mail.cz', 'gjemenxbaxmbjbt', 'aiffljinpyaickt');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (36, 'solkvlkhsiwdjpz', 'kciwmhmffyfkawp@mail.cz', 'mddhczvvfruysvx', 'cusgrdmnivffkmm');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (37, 'rjsyfvkhwjaqtyn', 'etgrtbpnrxnvmpk@mail.cz', 'kxvubescxsbkdiy', 'czzojkiqrdrzafi');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (38, 'dviyblnehrutbxq', 'odctnkifzfcblua@mail.cz', 'mdqzatyqprbxyrc', 'hzusosbvebzfiwn');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (39, 'owvhycgmhazuhcs', 'wwdahlaqtbsgcxv@mail.cz', 'mtudynekpovdcrr', 'jtppuiggbfsesjy');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (40, 'gvaahfdqrsisyos', 'uztahfcpkzejdzy@mail.cz', 'clhjlsrapgvxufv', 'timgmludasjzvaz');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (41, 'wydsijhqpxvjver', 'xjckzwowkoeqsgl@mail.cz', 'ofozmbieqgqzlxy', 'acsgylzwtnlzxuv');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (42, 'ilcejwzygjkrdyf', 'lcfurltdcyqxezi@mail.cz', 'xgswqkhtapxcqtr', 'nemlxbpsrlrqyzl');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (43, 'eeovuklkhluevyo', 'zkdozjknojssksp@mail.cz', 'sdwchipckzzsues', 'ugzlzsvachxpqkn');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (44, 'zdgmnlmxnwshswj', 'iqlomgagbfsjlne@mail.cz', 'rwjrokdqovtlqkd', 'ofxyffanbnbrnke');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (45, 'nkpqqpwpwswapaj', 'bhbjtwwjsslxjan@mail.cz', 'cxxnxeldjgzcrxg', 'ydnbdaujrzlcoca');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (46, 'kbtourbvwzrirug', 'qgphqapyabqsahl@mail.cz', 'irkdyscfabykrxj', 'sabziujekivigna');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (47, 'ujjpizrkfpdpxsv', 'etcwkwwyapnvbiw@mail.cz', 'rxemicmcfyzrbbc', 'fqlcepjzzgyljup');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (48, 'wqqsxoybykryhbq', 'ggvjcxswxzrrarv@mail.cz', 'nowfntjanhwhsxa', 'btxbrxbgbksqiev');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (49, 'mddhnbwoutlaxqd', 'oncfisnvhphrrir@mail.cz', 'mggrxrrkqwlkdim', 'siworkrisjwoswv');
+INSERT INTO public."user" (user_id, user_name, email, account_name, account_password) VALUES (50, 'qggfwpozcrycsfj', 'allijeyepvpeshc@mail.cz', 'dotolbjfdllrwrx', 'kxndtcwwqrppmwz');
+
+
+--
+-- TOC entry 3397 (class 0 OID 32773)
+-- Dependencies: 223
+-- Data for Name: user_photo; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (1, 1, 'vvwblpfczznleqjohangqspcwkerhgtvfuwapgimivpiw');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (2, 2, 'iyjqakbfltbeayfxpjsrmazwfuettmkorvncscnpehwyu');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (3, 3, 'lokkzaagznsmnqocmcspnpjxtlmrlofmjoyuaqdqvovcu');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (4, 4, 'ljjghxkloasvnugrgittwlulqzphqcrrsjxfksmkjxztf');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (5, 5, 'euefsywqvwtrfgyiimohprqesmdxvfrfetqhftwapicbn');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (6, 6, 'fvwtaxiuyfwurequqnwpljutodadkvchdbozyzvtaglvg');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (7, 7, 'suodyrprcagdscfykacbcghtnvtajjcadadcogsnyqdvm');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (8, 8, 'wbtirjodnxyatrdgpgusmjspivtrpqavgytlnpvayngqe');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (9, 9, 'bjttkjxvmyahykqbemhxetjyvttfzwvgbqdaunhrzhhvr');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (10, 10, 'vjitkqotntpngkbzsjhblxlnujweeuzulnbywvsorittt');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (11, 11, 'lzkxuractelsttojilrokvjjepttxzmvtzjvxqudcafdp');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (12, 12, 'wuxpzfblcanpuggacukgmfrshlfbhgcakaanhhvbbnsbu');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (13, 13, 'qskzzxwmqzgbewjudrhajprzcsdjjmlxpknsdxegigkkc');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (14, 14, 'eypnbfcxvccbzludfthttgnwivvkziinaibuzqvjurrsz');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (15, 15, 'fikqadjbllvxdzfgxckgdxiulojikwzdotdtxmwsjwbbc');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (16, 16, 'dnqpwybsusmtwcvcgxwljpsssgvtwcrnsmqpqrbikffyh');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (17, 17, 'fjbpyxfhizdgimrpybikektaivhlmhsnotecmhznilkii');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (18, 18, 'zjnodzuwzmmldhnihmoirsjbczhqlsmufnrbzgktymuym');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (19, 19, 'ccelvkxpqjtkdbyitnhhikswxnybkrmtpgfgknjnblpgw');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (20, 20, 'svwjqtrfqopgmcepyreihzvoqzdsgxcldrwhbqkvlryjj');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (21, 21, 'znnvqemuumwhdgmzasiayxsyrejwymlaexqwbxkqjqfuy');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (22, 22, 'vubrdssjliejwuaitfirxkybsstnujffnxlumilihlhzw');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (23, 23, 'svuzjqpdpzcmmoyxwhnsasnkibjnahxodmuowweyyjlqn');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (24, 24, 'irubwaeednsdspikedklozjggrckfbozzmksjljphnztf');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (25, 25, 'enbxwjmwevguudlepffpsbhcfsuxwwlfdrmzfnpdanclj');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (26, 26, 'mycnxgpaiquonwyqrsjyetisrjghzcqmuqnyzuexxgdty');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (27, 27, 'rowahldgbjkosvaqqsyzpksyktutbyzikmvpnbvadjmbb');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (28, 28, 'rmqjyyggstlzmnkxobamkvlvjfqwhlwhlwlhddtspamix');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (29, 29, 'tcwpezmykhkslzlqukdtduevubgmhpoiwtygiwnjchodd');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (30, 30, 'ajtfmjsirumtjmqpwtzfpyjxtymbthhyjhoawmjwsjxai');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (31, 31, 'jccbvrhkuzhewsdbsgkjzendajbxdtylpjgcnribxoqop');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (32, 32, 'whynfqifusvnaqkkhyffwougjebawtcuehpbiabeykoxn');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (33, 33, 'hrqnjbvmltvfjpwbwszxbjstihdlbtncpyxahbpluwgjw');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (34, 34, 'qzqpuossvgxfryajpyrfnqgrmeoptctjaxthbkivjqlpj');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (35, 35, 'wjiidaqwbspkzylqykaulturyaojqshnyddoexgahnbhr');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (36, 36, 'rhuisqjywmdfcfsfavdzcnfishcoekukykqxzyqftjzth');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (37, 37, 'yrbnuwcauuhxjjzpemmtpedkvnesornrtsrpmdoakafcw');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (38, 38, 'ifaenlcxpbwhbgxbcgfeempahijoztnbucnbetauolfzj');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (39, 39, 'nyrokdebithwqsooalazvvheoqbhronzkpvsorqxzkzrk');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (40, 40, 'julqqyvdbzcpmyngmtvptytmzzdsexjygxrewlouajhrk');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (41, 41, 'dsdolavpdttgdighxqdxxnasppqygfsraaaypiptrqpry');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (42, 42, 'ettxvfvhrehodlxcjkwnsjxqhesmcnmjzrohdpnaunldk');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (43, 43, 'zimsewynlkdzczfwznnsojhgeosmdfyuwpadkxccalxfh');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (44, 44, 'bpckudqjjhcmughpbpprhwhtuyazxyrvqogxdijadajpu');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (45, 45, 'weikppkfqbpotmeemdnsevnxljedqtacdduxjeyiceiyx');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (46, 46, 'yerrdmclrdlhvhlvcxxuwfxnzactaqcnuiblhnteemnwn');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (47, 47, 'tzzzrzhufhwxgykwvjuzukfnqmkklbywwuehkzscpwfkg');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (48, 48, 'qmlewitxpdiblwsysroeganmgdukkotrityfpohzsliso');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (49, 49, 'zndwuezficdympbpkmfpojbzmgmpicofprrqpwikuzwph');
+INSERT INTO public.user_photo (userphoto_id, user_id, profile_photo) VALUES (50, 50, 'bfuxasdosrjjyvnwdhzxomwhmeaxmgeypmznljbdjucfk');
+
+
+--
+-- TOC entry 3403 (class 0 OID 0)
+-- Dependencies: 209
+-- Name: user_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_user_id_seq', 1, false);
+
+
+-- Completed on 2021-10-29 09:52:56
+
+--
+-- PostgreSQL database dump complete
+--
+
